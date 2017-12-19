@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial scale=1.0">
-	<title>TBD</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial scale=1.0">
+  <title>Gaming for Gamers</title>
   <!-- Bootstrap CDN -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 </head>
 <body>
 
@@ -22,10 +23,11 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="#">BLK LOGO</a>
+      <a class='navbar-brand' href='index.html'><span class='logoFont'>Gaming<img id="logo" alt="logo" src="../img/logo.png"/>Gamers</span></a>
   </div> <!-- navbar-header -->
 
 <!-- Collect the nav links, forms, and other content for toggling -->
+
 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
   <ul class="nav navbar-nav">
     <li class="dropdown">
@@ -67,7 +69,7 @@
   </ul> <!-- dropdown-menu -->
 
   <ul class="nav navbar-nav navbar-right">
-    <li><a href="#">Sign in</a></li>
+    <li><a href="Login.html">LOG OUT</a></li>
     </li>
   </ul>
 
@@ -76,9 +78,14 @@
 </nav>
 
 <!-- ====================END OF NAVBAR=============== -->
+<div class="wrapper">
+
+<div class="container-fliud">
+  <div class="row" id="rowOne">
+</div>
 
 <div class="container">
-  <div class="row">
+  <div class="row" id="rowTwo">
     <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
       <!-- If the API has this data, we will dynamically append it here. If not, I can hard code it later. -->
       <div id="contentHeader"> <h1>CONTENT HEADER </h1></div>
@@ -108,7 +115,7 @@
 
 <!-- =======================CAROUSEL========================= -->
 
-  <div class="row" id="rowTwo">
+  <div class="row" id="rowThree">
     <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
@@ -142,17 +149,22 @@
         <span class="sr-only">Next</span>
         </a>
       </div> <!-- carousel-inner -->
-
-
-      <div id= "gameStats">This is where we will dynamically append the game stats from the API This is where we will dynamically append the game stats from the API This is where we will dynamically append the game stats from the API This is where we will dynamically append the game stats from the API
-      </div>
     </div> <!-- col -->
 </div> <!-- container -->
 
   <!-- =======================END OF CAROUSEL==================== -->
 
 <div class="container">
-  <div class="row" id="rowThree">
+  <div class="row" id="rowFour">
+    <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+      <div id= "gameStats">This is where we will dynamically append the game stats from the API This is where we will dynamically append the game stats from the API This is where we will dynamically append the game stats from the API This is where we will dynamically append the game stats from the API
+      </div> 
+    </div> <!-- col -->
+  </div> <!-- row -->
+</div> <!-- container -->
+
+<div class="container">
+  <div class="row" id="rowFive">
     <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
       <div class="panel panel-default">
         <div class="panel-heading">
@@ -160,8 +172,8 @@
         </div> <!-- panel-heading -->
         <div class="panel-body">
           <form class="form-inline">
-          <input type="text" class="form-control" id="searchForm" placeholder="Search">
-          <button type="submit" class="btn btn-default">Submit</button>
+          <input type="text" class="form-control" id="userInput" placeholder="Search">
+          <button type="button" class="btn btn-default" id="submit">Submit</button>
           </form>
         </div> <!-- panel-body -->
       </div> <!-- panel -->
@@ -169,11 +181,26 @@
   </div> <!-- row -->
 </div> <!-- container -->
 
+<div class="container">
+  <div class="row" id="rowSix">
+    <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+      <div class="well well-lg" id="searchContent"></div>
+    </div> <!-- col -->
+  </div> <!-- row -->
+</div> <!-- container -->
+
+<div class="footer">
+  <footer>
+    <small>&copy; Copyright 2017 BLK Project#1</small></div>
+  </footer>
+
+</div> <!-- wrapper -->
+
 
 <!-- JQuery CDN -->
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <!-- Bootstrap JS -->
 <script src="../js/bootstrap.min.js"></script>
-<script src="../js/front.js"></script>
+<script src="../js/app.js"></script>
 </body>
 </html>
